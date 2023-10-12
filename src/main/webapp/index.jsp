@@ -11,7 +11,7 @@
     <div class="container">
         <h1 class="mt-5">Contador de clicks</h1>
         <div class="jumbotron">
-            <p class="lead">El contador actualmente vale <span class="badge badge-primary">${cookie.contador.value}</span></p>
+            <p class="lead">El contador actualmente vale <span class="badge badge-primary">${cookie.contador.value != null ? cookie.contador.value : 0}</span></p>
         </div>
         <form action="ContadorClicks" method="post">
             <button class="btn btn-primary" type="submit">Incrementar</button>
